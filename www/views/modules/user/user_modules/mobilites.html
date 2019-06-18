@@ -1,0 +1,101 @@
+<!-- START SERACH MOBILITIES -->
+<div class="col-lg-12" id="div_research_mobilities" style="display: none;">
+  <div class="animated fadeIn">
+    <!-- Dropdown Card Example -->
+    <div class="card shadow mb-4">
+      <!-- Card Header - Dropdown -->
+      <div
+          class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+        <h6 class="m-0 font-weight-bold text-primary">Recherche</h6>
+      </div>
+
+      <div class="card-body">
+
+        <div class="form-group row">
+
+          <div class="col-sm-3">
+            <input type="text" id="input_academic_year" class="form-control"
+                   placeholder="Année academique">
+          </div>
+
+          <div class="col-sm-3">
+            <select class="form-control" id="select_mobility_state"
+                    placeholder="Etat de la mobilité">
+              <option selected value="all">Etat de la mobilité</option>
+              <option value="cr">Créée</option>
+              <option value="ipp">En préparation</option>
+              <option value="tp">A payer</option>
+              <option value="ip">En cours</option>
+              <option value="tps">Solde à payer</option>
+              <option value="co">Complétée</option>
+            </select>
+          </div>
+
+          <div class="col-sm-3">
+          </div>
+
+          <div class="col-sm-3" style="text-align: right;">
+            <button type="button" id="searchMobility_button"
+                    class="btn btn-primary">Rechercher
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- END SERACH MOBILITIES -->
+
+<!-- Card -->
+<div class="col-lg-12" id="div_mobilites" style="display: none;">
+
+  <div class="animated fadeIn">
+    <!-- Dropdown Card Example -->
+    <div class="card shadow mb-4">
+      <!-- Card Header - Dropdown -->
+      <div
+          class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+        <h6 class="m-0 font-weight-bold text-primary">Liste des
+          mobilites</h6>
+      </div>
+
+      <!-- Card Body -->
+      <div class="card-body" id="table_mobilites">
+
+        <div class="table-responsive">
+          <table class="table table-bordered" id="dataTable" width="100%"
+                 cellspacing="0" style="text-align: center;">
+            <thead>
+            <tr>
+              <th>ID</th>
+              <th>Confirmation</th>
+              <th>State</th>
+              <th>Mobility-Tool</th>
+              <th>Pro-Eco</th>
+              <th>Paiement</th>
+              <th>Consulter</th>
+            </tr>
+            </thead>
+
+            <tfoot>
+            <tr>
+              <th>ID</th>
+              <th>Confirmation</th>
+              <th>State</th>
+              <th>Mobility-Tool</th>
+              <th>Pro-Eco</th>
+              <th>Paiement</th>
+              <th>Consulter</th>
+            </tr>
+            </tfoot>
+            <tbody id="tbody_mobilites">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

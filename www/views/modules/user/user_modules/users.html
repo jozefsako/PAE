@@ -1,0 +1,93 @@
+<div class="col-lg-12" id="div_research_users">
+  <div class="animated fadeIn">
+    <!-- Dropdown Card Example -->
+
+    <div class="card shadow mb-4">
+      <!-- Card Header - Dropdown -->
+      <div
+          class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+        <h6 class="m-0 font-weight-bold text-primary">Recherche</h6>
+      </div>
+
+      <div class="card-body">
+
+        <div class="form-group row" id="div_input_etudiants">
+
+          <div class="col-sm-3">
+            <input type="text" id="input_lastname_student" class="form-control"
+                   placeholder="Nom">
+          </div>
+
+          <div class="col-sm-3">
+            <input type="text" id="input_firstname_student"
+                   class="form-control" placeholder="Prénom">
+          </div>
+
+          <div class="col-sm-3">
+          </div>
+
+          <div class="col-sm-3" style="text-align: right;">
+            <button type="button" id="searchUser_button"
+                    class="btn btn-primary">Rechercher
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Card -->
+<div class="col-lg-12" id="div_users" style="display: none;">
+
+  <div class="animated fadeIn">
+    <!-- Dropdown Card Example -->
+    <div class="card shadow mb-4">
+      <!-- Card Header - Dropdown -->
+      <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+        <h6 class="m-0 font-weight-bold text-primary">Liste des utilisateurs</h6>
+      </div>
+
+      <!-- Card Body -->
+      <div class="card-body" id="table_users">
+
+        <div class="table-responsive">
+          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0"
+                 style="text-align: center;">
+            <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nom</th>
+              <th>Prénom</th>
+              <th>Email</th>
+              <th>Pseudo</th>
+              <th>Type</th>
+              <th>Consulter</th>
+            </tr>
+            </thead>
+
+            <tfoot>
+            <tr>
+              <th>ID</th>
+              <th>Nom</th>
+              <th>Prénom</th>
+              <th>Email</th>
+              <th>Pseudo</th>
+              <th>Type</th>
+              <th>Consulter</th>
+            </tr>
+            </tfoot>
+
+            <tbody id="tbody_users">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

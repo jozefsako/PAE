@@ -1,0 +1,222 @@
+<div id="div_add_partners" style="display:none">
+  <div class="animated fadeIn">
+    <!-- Dropdown Card Example -->
+
+    <div class="card shadow mb-4">
+      <!-- Card Header - Dropdown -->
+
+      <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+        <h6 class="m-0 font-weight-bold text-primary">Ajouter un partenaire</h6>
+      </div><!-- Card Body -->
+
+      <div class="card-body">
+        <form id="form_add_partner">
+          <div class="form-group row">
+            <div class="col-sm">
+              Les champs bleus sont obligatoire !
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-4 mb-3 mb-sm-0">
+              <input type="text" class="form-control form-control-user border border-primary"
+                     id="legalName" name="legalName" placeholder="Legal Name">
+            </div>
+
+            <div class="col-sm-4 mb-3 mb-sm-0">
+              <input type="text" class="form-control form-control-user border border-primary"
+                     id="businessName" name="businessName" placeholder="Business Name">
+            </div>
+
+            <div class="col-sm-4">
+              <input type="text" class="form-control form-control-user border border-primary"
+                     id="fullLegalName" name="fullLegalName" placeholder="Full Legal Name">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-4">
+              <input type="text" class="form-control form-control-user border border-primary"
+                     id="departement" name="departement" placeholder="Departement">
+            </div>
+
+            <div class="col-sm-4">
+              <select class="form-control border border-primary" id="typeOrganisation"
+                      name="typeOrganisation">
+                <option name="type" value="">
+                  Type
+                </option>
+
+                <option name="tpe" value="TPE">
+                  TPE
+                </option>
+
+                <option name="pme" value="PME">
+                  PME
+                </option>
+
+                <option name="eti" value="ETI">
+                  ETI
+                </option>
+
+                <option name="tge" value="TGE">
+                  TGE
+                </option>
+              </select>
+            </div>
+
+            <div class="col-sm-4">
+              <input type="number" class="form-control form-control-user border border-primary"
+                     id="numberOfEmployees" name="numberOfEmployees"
+                     placeholder="Number of Employees" value="">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-4">
+              <input type="text" class="form-control form-control-user border border-primary"
+                     id="email" name="email" placeholder="Email">
+            </div>
+
+            <div class="col-sm-4">
+              <input type="text" class="form-control form-control-user border border-primary"
+                     id="webSite" name="webSite" placeholder="Website">
+            </div>
+
+            <div class="col-sm-4 mb-3 mb-sm-0">
+              <input type="text" class="form-control form-control-user border border-primary"
+                     id="legalAddress" name="legalAddress" placeholder="Legal Address">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-4">
+              <select class="form-control border border-primary select_countries" name="country">
+              </select>
+            </div>
+
+            <div class="col-sm-4">
+              <input type="text" class="form-control form-control-user border border-primary"
+                     id="region" name="region" placeholder="Region">
+            </div>
+
+            <div class="col-sm-4">
+              <input type="text" class="form-control form-control-user border border-primary"
+                     id="city" name="city" placeholder="City">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-4">
+              <input type="text" class="form-control form-control-user border border-primary"
+                     id="postCode" name="postCode" placeholder="Postal box">
+            </div>
+
+            <div class="col-sm-4">
+              <input type="text" class="form-control form-control-user" id="poBox" name="poBox"
+                     placeholder="P.O. Box">
+            </div>
+
+            <div class="col-sm-4">
+              <input type="text" class="form-control form-control-user" id="cedex" name="cedex"
+                     placeholder="Cedex">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-4">
+              <input type="text" class="form-control form-control-user border border-primary"
+                     id="telephone1" name="telephone1" placeholder="Phone number 1">
+            </div>
+
+            <div class="col-sm-4">
+              <input type="text" class="form-control form-control-user" id="telephone2"
+                     name="telephone2" placeholder="Phone number 2">
+            </div>
+
+            <div class="col-sm-4">
+              <input type="text" class="form-control form-control-user" id="fax" name="fax"
+                     placeholder="Fax">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-4">
+              <input type="text" class="form-control form-control-user" id="commentOrga"
+                     name="commentOrga" placeholder="Commment">
+            </div>
+
+            <div class="col-sm-4">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="public_body" name="public_body"
+                       value="public_body"> <label>Public Body</label>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="nonProfit" name="nonProfit"
+                       value="nonProfit"> <label class="form-check-label">Non Profit</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-4">
+              <select class="form-control" name="organisationCode">
+                <option name="type" value="">
+                  Type of partner
+                </option>
+
+                <option name="school" value="S">
+                  School
+                </option>
+
+                <option name="organisation" value="O">
+                  Organisation
+                </option>
+              </select>
+            </div>
+
+            <div class="col-sm-4" name="div_btn_add_partner" id="div_btn_add_partner" style="display: none;">
+              <a href="" class="btn btn-primary btn-user btn-block" id="btn_add_partner">Ajouter</a>
+            </div>
+
+            <div class="col-sm-4" style="display: none;" id="div_btn_return_partner">
+              <a href="" class="btn btn-success btn-user btn-block" id="btn_return_partner">Retour</a>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-sm-12" id="feedback_add_partner_success" style="display: none">
+      <div class="animated fadeIn">
+        <div class="alert alert-success" role="alert">
+          <strong>Félicitations !</strong> Le partenaire a été ajouté avec succès
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12" id="feedback_add_partner_fail" style="display: none">
+      <div class="animated fadeIn">
+        <div class="alert alert-danger" role="alert">
+          <strong>Erreur !</strong> Veuillez compléter tous les champs obligatoire !
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12" id="feedback_add_partner_fail_email" style="display: none">
+      <div class="animated fadeIn">
+        <div class="alert alert-danger" role="alert">
+          <strong>Erreur !</strong> Veuillez entrer une adresse mail correcte !
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

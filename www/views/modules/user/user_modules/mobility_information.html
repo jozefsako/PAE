@@ -1,0 +1,409 @@
+<!-- Card -->
+<div class="col-lg-12" id="div_mobility_information" style="display: none;">
+
+  <div class="animated fadeIn">
+
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+      <h1 class="h3 mb-0 text-gray-800">Documents</h1>
+    </div>
+
+    <div class="row">
+      <!-- Student Card -->
+      <div class="col-xl-3 col-md-6 mb-4" style="height: 130px;">
+        <div class="card border-left-primary shadow h-100 py-2">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"> Etudiant
+                </div>
+                <div class="h5 mb-0 font-weight-bold text-gray-800" id="card_student">
+
+                </div>
+              </div>
+              <div class="col-auto">
+                <i class="fas fa-user fa-2x text-gray-300"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobility Choice Card -->
+      <div class="col-xl-3 col-md-6 mb-4" style="height: 130px;">
+        <div class="card border-left-success shadow h-100 py-2">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Choix de
+                  mobilité
+                </div>
+                <div class="h5 mb-0 font-weight-bold text-gray-800" id="card_mobility_choice">
+
+                </div>
+              </div>
+              <div class="col-auto">
+                <i class="fas fa-file fa-2x text-gray-300"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Org Card -->
+      <div class="col-xl-3 col-md-6 mb-4" style="height: 130px;">
+        <div class="card border-left-info shadow h-100 py-2">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Partenaire
+                </div>
+                <div class="h5 mb-0 font-weight-bold text-gray-800" id="card_org">
+                </div>
+              </div>
+              <div class="col-auto">
+                <i class="fas fa-building fa-2x text-gray-300"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Documents Card -->
+      <div class="col-xl-3 col-md-6 mb-4" style="height: 130px;">
+        <div class="card border-left-warning shadow h-100 py-2">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Documents
+                </div>
+                <div class="row no-gutters align-items-center">
+                  <div class="col-auto">
+                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" id="card_docs"></div>
+                  </div>
+                  <div class="col">
+                    <div class="progress progress-sm mr-2">
+                      <div class="progress-bar bg-info" role="progressbar" id="progress_docs"
+                           aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="h5 mb-0 font-weight-bold text-gray-800" id="card_state">
+                </div>
+              </div>
+              <div class="col-auto">
+                <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- START DIV DOCS -->
+    <div id="div_docs" style="display: none" class="animated fadeIn">
+      <div class="row">
+
+        <!-- DOC DEPART -->
+        <div class="col-lg-6">
+
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Documents de Départ</h6>
+            </div>
+            <div class="card-body" id="departure_docs">
+
+              <!-- Checkbox departure -->
+              <div class="form-group row">
+
+                <div class="col-sm-10">Bourse d'étude</div>
+                <div class="col-sm-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cb_SS" value="SS">
+                  </div>
+                </div>
+
+                <div class="col-sm-10">Convention de Stage / Etude</div>
+                <div class="col-sm-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cb_ASI" value="ASI">
+                  </div>
+                </div>
+
+                <div class="col-sm-10">Charte de l'Etudiant</div>
+                <div class="col-sm-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cb_SCH" value="SCH">
+                  </div>
+                </div>
+
+                <div class="col-sm-10">Test Linguistique</div>
+                <div class="col-sm-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cb_LTD" value="LTD">
+                  </div>
+                </div>
+
+                <div class="col-sm-10">Documents d'Engagement</div>
+                <div class="col-sm-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cb_CD" value="CD">
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- DOC RETOUR -->
+        <div class="col-lg-6">
+
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Documents de Retour</h6>
+            </div>
+            <div class="card-body" id="return_docs">
+
+              <div class="form-group row">
+
+                <!-- Checkbox return -->
+                <div class="col-sm-10">Certificat de Stage</div>
+                <div class="col-sm-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cb_CI" value="CI">
+                  </div>
+                </div>
+
+                <div class="col-sm-10">Attestation de Séjour</div>
+                <div class="col-sm-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cb_CR" value="CR">
+                  </div>
+                </div>
+
+                <div class="col-sm-10">Releve de Notes</div>
+                <div class="col-sm-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cb_TN" value="TN">
+                  </div>
+                </div>
+
+                <div class="col-sm-10">Rapport Final</div>
+                <div class="col-sm-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cb_FR" value="FR">
+                  </div>
+                </div>
+
+                <div class="col-sm-10">Test linguistique</div>
+                <div class="col-sm-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cb_LTR" value="LTR">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        <!-- UPDATE TOOLS -->
+        <div class="col-lg-6">
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Encodage logicel externe</h6>
+            </div>
+            <div class="card-body">
+              <div class="form-group row">
+
+                <div class="col-sm-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cb_mob_tool">
+                    <label class="form-check-label">
+                      Mobility-Tool
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-sm-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cb_pro_eco">
+                    <label class="form-check-label">
+                      Pro-Eco
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                </div>
+                <div class="col-sm-2" style="text-align: center">
+                  <a href="" class="btn btn-success btn-circle" id="btn_update_mobility_tools">
+                    <i class="fas fa-check"></i>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ACCEPTE PAYEMENT -->
+        <div class="col-lg-6">
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Demandes de paiements</h6>
+            </div>
+            <div class="card-body">
+
+              <div class="form-group row">
+                <div class="col-sm-10" id="payement_info">
+                </div>
+
+                <div class="col-sm-2" style="text-align: center">
+                  <a href="" class="btn btn-primary btn-circle" id="btn_accept_payement">
+                    <i class="fas fa-dollar-sign"></i>
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- START DIV TAKEN CARE OF -->
+    <div id="div_taken_care_of" style="display: none;">
+
+      <div class="animated fadeIn">
+        <div class="row">
+
+          <div class="col-lg-12">
+            <div class="card shadow mb-4">
+              <div class="card-body">
+                <strong>Rappel : Cette mobilité est prise en charge par le pays !</strong>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END DIV TAKEN CARE OF -->
+
+
+    <!-- START DIV BTN ANNULER + MAJ -->
+    <div class="form-group row">
+      <div class="col-sm-6" id="div_btn_cancel_mobility">
+        <a href="" class="btn btn-danger btn-user btn-block" id="btn_cancel_mobility">
+          Annuler
+        </a>
+      </div>
+
+      <div class="col-sm-6" id="div_btn_update_mobility">
+        <a href="" class="btn btn-success btn-user btn-block" id="btn_update_mobility">
+          Mettre à jour
+        </a>
+      </div>
+    </div>
+    <!-- END DIV BTN ANNULER + MAJ -->
+
+    <!-- START CANCELATION -->
+    <div class="row" id="div_mobility_cancelation" style="display: none;">
+      <div class="animated fadeIn">
+        <!-- DOC ANNULATION -->
+        <div class="col-lg-12">
+
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Annuler une mobilité</h6>
+            </div>
+            <div class="card-body">
+
+              <!-- START SELECT REASONS -->
+              <div id="div_select_reasons" style="display: none">
+                <div class="form-group row">
+                  <label class="col-sm-2 col-form-label">Raison</label>
+                  <div class="col-sm-10">
+                    <select class="form-control" id="select_reasons">
+                      <option value="null" hidden>Raison</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- END SELECT REASONS -->
+
+              <!-- START OTHER REASON -->
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Autre</label>
+                <div class="col-sm-10">
+                  <textarea class="form-control" rows="3" id="other_reason"></textarea>
+                </div>
+              </div>
+              <!-- END OTHER REASONS -->
+
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-6" id="div_btn_revert_cancelation">
+              <a href="" class="btn btn-danger btn-user btn-block" id="btn_revert_cancelation">
+                Revenir
+              </a>
+            </div>
+
+            <div class="col-sm-6" id="div_btn_confirm_cancelation">
+              <a href="" class="btn btn-success btn-user btn-block" id="btn_confirm_cancelation">
+                Confirmer l'annulation
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- END CANCELATION -->
+
+
+    <!-- START FEEDBACK -->
+    <div class="form-group row">
+      <div class="col-sm-12" id="feedback_sign_document_success" style="display: none">
+        <div class="animated fadeIn">
+          <div class="alert alert-success" role="alert">
+            <strong>Félicitations !</strong> La modification a été faite avec succès
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12" id="feedback_sign_document_fail" style="display: none">
+        <div class="animated fadeIn">
+          <div class="alert alert-danger" id="div_sign_document_fail" role="alert">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12" id="feedback_sign_document_warning" style="display: none">
+        <div class="animated fadeIn">
+          <div class="alert alert-warning" role="alert">
+            <strong>Attention !</strong> Cette mobilité est annulée
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END FEEDBACK -->
+
+  </div>
+</div>
+
